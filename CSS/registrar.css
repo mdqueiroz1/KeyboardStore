@@ -1,0 +1,24 @@
+:root{
+	--background : #A3A9AA;
+	--cor1: #0B132B;
+	--cor2: #1D3270;
+    --cor3: #3E6BF0;
+	--corSombra: #06102e;
+	--corFonte:#ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dadosPessoais h1{
+    text-align: center;
+}
+
+.dadosPessoais{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}

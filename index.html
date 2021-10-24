@@ -1,85 +1,130 @@
 <html>
-    <head>
-    
-        <title>Keyboard Store</title>
-        <link rel="stylesheet" href="CSS/index.css">
-        <link rel="stylesheet" href="CSS/uicons-regular-rounded/uicons-regular-rounded/css/uicons-regular-rounded.css">
-    
-    </head>
-    
-    <body>
-        
-        <div class="cabecalhoPagina">
-            
-            <!--!Barra de pesquisa-->
-            <a href="index.html"><img src="CSS/imagens/logo.png" class="logoLoja"></a>
-            <div class="barraPesquisa">
-                <table border class="pesquisaCabecalho">
-                    <td><input type="text" class="pesquisaInput" placeholder="Pesquisa" ></td>
-                    <td><a href="#"><i class="fi-rr-search"></i></a></td>
-                </table>
-            </div>
 
-            <div>
-                <a href="login.html" id="iconeBarraPesquisa"><i class="fi-rr-user"></i></a>
-                <a href="#" id="iconeBarraPesquisa"><i class="fi-rr-shopping-cart"></i></a>
+<head>
+
+    <title>Keyboard Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/uicons-regular-rounded/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="cabecalhoSite">
+        <!-- !Icone e texto -->
+        <div class="container textoLoja">
+            <div class="row justify-content-center">
+                <div class="col-1">
+                    <a href="index.html"><img src="CSS/imagens/logo.png" class="logoLoja"></a>
+                </div>
+                <div class="col-3">
+                    <p class="TextoTopo digitacao-animation">Keyboard_Store</p>
+                </div>
             </div>
-            
-            <!--!Menu Dropdown-->
-            <div class="menuDropdown">
-                <header class="header">
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="#"><i class="fi-rr-menu-burger"></i> Teclados</i></a>
-                                <ul>
-                                    <li><a href="#"><img src="CSS/imagens/005-keyboard-3.png" id="imgMenu"> Teclados <i class="fi-rr-angle-small-right"></i></a>
-                                        <ul>
-                                            <li><a href="#">Teclado 100%</a></li>
-                                            <li><a href="#">Teclado 80%</a></li>
-                                            <li><a href="#">Teclado 60%</a></li>
-                                            <li><a href="#">Teclado 40%</a></li>
-                                        </ul>
-                                    <li><a href="#"><img src="CSS/imagens/001-keyboard.png" id="imgMenu"> Keycaps</a>
-                                    <li><a href="#"><img src="CSS/imagens/004-keyboard-2.png" id="imgMenu"> Switches</a>
-                                    <li><a href="#"><img src="CSS/imagens/003-pcb.png" id="imgMenu"> PCBs</a>
-                                </ul>
-                            <li><a href="montador.html"><i class="fi-rr-settings"></i> Monte seu teclado</i></a>
-                            <li><a href="#"><i class="fi-rr-megaphone"></i> Contato</i></a>        
-                        </ul>
-                    </nav>
-                </header>
-            </div>
-        
         </div>
-            
-        <!--!Sessão carrocel-->
-
-        <div class="cabecalhoCarrossel">
-            <hr>
-            <h1><i class="fi-rr-megaphone"></i> Teclados já disponíveis</h1>
-            <hr>
+        <!--!Barra de pesquisa-->
+        <div class="container pesquisaCabecalho">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <input type="text" class="pesquisaInput" placeholder="Pesquisa">
+                </div>
+                <div class="col-1 pesquisaIcon">
+                    <button class="botao" type="button"><i class="fi-rr-search"></i></button>
+                </div>
+            </div>
         </div>
-
-        <section class="carrossel-mascara">
-            <div class="carrossel-container slide">
-                <a href="teclado1.html"><img src="CSS/imagens/keyboard1.jpg"/></a>
-                <a href="teclado2.html"><img src="CSS/imagens/keyboard2.jpg"/></a>
-                <a href="teclado3.html"><img src="CSS/imagens/keyboard3.jpg"/></a>
-                <a href="teclado4.html"><img src="CSS/imagens/keyboard4.jpg"/></a>
-                <a href="teclado5.html"><img src="CSS/imagens/keyboard5.jpg"/></a>
+        <!--!Menu Dropdown-->
+        <div class="menuDropdown">
+            <header class="header">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#"><i class="fi-rr-menu-burger"></i> Teclados</i></a>
+                            <ul>
+                                <li><a href="#">Teclados</i></a>
+                                    <ul>
+                                        <li><a href="#">Teclado 100%</a></li>
+                                        <li><a href="#">Teclado 80%</a></li>
+                                        <li><a href="#">Teclado 60%</a></li>
+                                        <li><a href="#">Teclado 40%</a></li>
+                                    </ul>
+                                <li><a href="#">Keycaps</a>
+                                <li><a href="#">Switches</a>
+                                <li><a href="#">PCBs</a>
+                            </ul>
+                        <li><a href="montador.html"><i class="fi-rr-settings"></i> Monte seu teclado</i></a>
+                        <li><a href="#"><i class="fi-rr-megaphone"></i> Contato</i></a>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <!--! Icone sacola e user-->
+        <div class="iconeCartUser">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fi-rr-shopping-cart"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Meu carrinho</a></li>
+                    <li><a class="dropdown-item" href="#">R$ 0</a></li>
+                </ul>
             </div>
-        </section>
-        
-        <!--!caixa de dialogo Fale Conosco-->
-        
-        <section class="faleConosco">
-            <div>
-                <p><h2><i class="fi-rr-bell-ring"></i> Cadastre seu email para receber todas as promoções!</h2></p>
-                <input type="email" class="inputEmail" id="caixaTexto" placeholder="Email">
-                <input type="text" class="inputNome" id="caixaTexto" placeholder="Nome Completo">
-                <input type="button" value="Enviar" id="botaoEnviar">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fi-rr-user"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Minha conta</a></li>
+                    <li><a class="dropdown-item" href="#">Entrar</a></li>
+                    <li><a class="dropdown-item" href="#">Registrar</a></li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </div>
 
-    </body>
+
+
+    <!--!Sessão carrocel-->
+
+    <div class="cabecalhoCarrossel">
+        <hr>
+        <h1><i class="fi-rr-megaphone"></i> Teclados já disponíveis</h1>
+        <hr>
+    </div>
+
+    <section class="carrossel-mascara">
+        <div class="carrossel-container slide">
+            <a href="teclado1.html"><img src="CSS/imagens/keyboard1.jpg" /></a>
+            <a href="teclado2.html"><img src="CSS/imagens/keyboard2.jpg" /></a>
+            <a href="teclado3.html"><img src="CSS/imagens/keyboard3.jpg" /></a>
+            <a href="teclado4.html"><img src="CSS/imagens/keyboard4.jpg" /></a>
+            <a href="teclado5.html"><img src="CSS/imagens/keyboard5.jpg" /></a>
+        </div>
+    </section>
+
+    <!--!caixa de dialogo Fale Conosco-->
+
+    <section class="faleConosco">
+        <div>
+            <p>
+            <h2><i class="fi-rr-bell-ring"></i> Cadastre seu email para receber todas as promoções!</h2>
+            </p>
+            <input type="email" class="inputEmail" id="caixaTexto" placeholder="Email">
+            <input type="text" class="inputNome" id="caixaTexto" placeholder="Nome Completo">
+            <input type="button" value="Enviar" id="botaoEnviar">
+        </div>
+    </section>
+
+</body>
+
 </html>
